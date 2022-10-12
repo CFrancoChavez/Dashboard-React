@@ -18,7 +18,7 @@ class ContentWrapper extends React.Component {
 		const response = await fetch("http://localhost:4000/api/productos");
 		const data = await response.json();
 		console.log(data.data)
-		let columnas = [ "genre", "length", "title", "rating", "awards"];
+		let columnas = [ "name", "price", "discount", "category", "image"];
 		this.setState({ movies: data.data, columnTables: columnas })
 	}
 
@@ -29,6 +29,7 @@ class ContentWrapper extends React.Component {
 	
 				{/* <!-- Main Content --> */}
 				<div id="content">
+					
 	
 					{/* <!-- Topbar --> */}
 					<Topbar />
@@ -39,8 +40,9 @@ class ContentWrapper extends React.Component {
 					{/* <!--End Content Row Top--> */}
 				</div>
 				{/* <!-- End of MainContent --> */}
-	
-	
+				<div className="card-header py-3">
+				<h4 className="m-0 font-weight-bold text-gray-800"> Products in data base </h4>
+				</div>
 				<Table data={ this.state.movies } columns={this.state.columnTables} />
 	
 				{/* <!-- Footer --> */}

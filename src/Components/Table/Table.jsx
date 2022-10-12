@@ -17,7 +17,7 @@ function Table(props) {
             </tr>
             </thead>
             <tbody>
-                { data.map((element, i) => <Row key={ element.title + i } rowData={element} columns={columns}/>) }
+                { data.map((element, i) => <Row key={ element.name + i } rowData={element} columns={columns}/>) }
             </tbody>
 
         </table>

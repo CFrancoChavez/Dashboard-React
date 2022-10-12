@@ -5,7 +5,7 @@ function Row(props) {
     return (
         <tr>
             {
-                columns.map((element, i) => <td key={ i }> { element == "genre" ? rowData[element]?.name : rowData[element] } </td>)
+                columns.map((element, i) => <td key={ element+i }> { element =="product" ? rowData[element]?.name : rowData[element] } </td>)
             }
             
         </tr>
