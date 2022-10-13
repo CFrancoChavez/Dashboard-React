@@ -5,6 +5,7 @@ import ContentRowMovies from "./ContentRowMovies";
 
 function ContentRowTop(props) {
 	const { data = [] } = props;
+	//const lastProduct = data.pop()
 	
 	// let infoTarjetas = [
 	// 	{
@@ -38,7 +39,8 @@ function ContentRowTop(props) {
 					<div className="row">
 						{
 							data.map(function(unaTarjeta){
-								return <ContentRowMovies key={ unaTarjeta.name } title={unaTarjeta.name} icon={ unaTarjeta.icon } color={ unaTarjeta.image } value={ unaTarjeta.price } />
+								return <ContentRowMovies key={ unaTarjeta.name } title={unaTarjeta.name} icon={ "fas fa-shoe-prints"
+							} color={ unaTarjeta.image } value={ unaTarjeta.price } />
 							})
 						}
 					</div>
@@ -51,7 +53,10 @@ function ContentRowTop(props) {
 						<div className="col-lg-6 mb-4">
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
-									<h5 className="m-0 font-weight-bold text-gray-800">Last product in Data Base</h5>
+									{
+									
+									} 
+									<h5 className="m-0 font-weight-bold text-gray-800">Last product in Data Base </h5>
 								</div>
 								<div className="card-body">
 									<div className="text-center">
