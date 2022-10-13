@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from '../../Assets/images/jordan-walke.png';
+import Avatar from '../../Assets/images/zapa 7.jpg';
 
 function Topbar() {
     return (
@@ -36,8 +36,8 @@ function Topbar() {
                 {/* <!-- Nav Item - User Information --> */}
                 <li className="nav-item dropdown no-arrow">
                     <a className="nav-link dropdown-toggle" href="/" id="userDropdown">
-                        <span className="mr-2 d-none d-lg-inline text-gray-600 small">Jordan Walke</span>
-                        <img className="img-profile rounded-circle" src={Avatar} alt="Jordan Walke - Creador de React" width="60" />
+                        <span className="mr-2 d-none d-lg-inline text-gray-600 small">Sports House user</span>
+                        <img className="img-profile rounded-circle" src={Avatar} alt="Sports House user" width="60" />
                     </a>
                 </li>
 
