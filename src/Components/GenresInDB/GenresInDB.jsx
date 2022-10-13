@@ -39,7 +39,10 @@ class GenresInDB extends Component {
                             {
                                this.state.genres.map(genre => <Genre key={genre.name} name={genre.name} />)
                             }
-                            
+                                                    
+                            {
+                                this.state.genres.length
+                            }
 
                         </div>
                     </div>

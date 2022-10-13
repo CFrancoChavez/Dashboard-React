@@ -36,7 +36,7 @@ class ContentWrapper extends React.Component {
 					{/* <!-- End of Topbar --> */}
 	
 					{/* <!-- Content Row Top --> */}
-					<ContentRowTop />
+					<ContentRowTop data={ this.state.movies }/>
 					{/* <!--End Content Row Top--> */}
 				</div>
 				{/* <!-- End of MainContent --> */}
