@@ -41,7 +41,7 @@ class ContentWrapper extends React.Component {
 				</div>
 				{/* <!-- End of MainContent --> */}
 				<div className="card-header py-3">
-				<h4 className="m-0 font-weight-bold text-gray-800"> Products in data base </h4>
+				<h4 className="m-0 font-weight-bold text-gray-800"> Products in data base : { this.state.movies.length } </h4>
 				</div>
 				<Table data={ this.state.movies } columns={this.state.columnTables} />
 	

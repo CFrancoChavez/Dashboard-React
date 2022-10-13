@@ -28,7 +28,7 @@ class GenresInDB extends Component {
             <div className="col-lg-6 mb-4">
                 <div className="card shadow mb-4">
                     <div className="card-header py-3">
-                        <h5 className="m-0 font-weight-bold text-gray-800" onMouseOver={ (e) => e.target.parentNode.nextElementSibling.classList.add("bg-secondary") } >Users in Data Base</h5>
+                        <h5 className="m-0 font-weight-bold text-gray-800" onMouseOver={ (e) => e.target.parentNode.nextElementSibling.classList.add("bg-secondary") } >Users in Data Base : {this.state.genres.length}</h5>
                     </div>
                     <div className="card-body">
                         <div className="row">
@@ -40,9 +40,7 @@ class GenresInDB extends Component {
                                this.state.genres.map(genre => <Genre key={genre.name} name={genre.name} />)
                             }
                                                     
-                            {
-                                this.state.genres.length
-                            }
+                            
 
                         </div>
                     </div>
