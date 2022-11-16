@@ -27,7 +27,7 @@ function ContentRowTop(props) {
 	// 		value: 49
 	// 	}
 	// ]
-
+	//{lastProduct.name} estaba agregado al final de la linea 59 pero rompia
 
     return(
         <div className="container-fluid bg-gray-500">
