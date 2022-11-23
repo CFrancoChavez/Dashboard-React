@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import  "./imagen.css"
 
 function ContentRowMovies(props) {
 
@@ -8,6 +9,7 @@ function ContentRowMovies(props) {
         value = 0,
         color = "",
         icon = "",
+        image=""
     } = props;
 
     return (
@@ -23,6 +25,7 @@ function ContentRowMovies(props) {
                         <div className="col-auto">
                             <i className={`${icon} fa-2x text-gray-300`}></i>
                         </div>
+                        <img src={image} className="productImage"/>
                     </div>
                 </div>
             </div>

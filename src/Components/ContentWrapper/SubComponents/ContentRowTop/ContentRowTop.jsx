@@ -40,7 +40,7 @@ function ContentRowTop(props) {
 						{
 							data.map(function(unaTarjeta){
 								return <ContentRowMovies key={ unaTarjeta.name } title={unaTarjeta.name} icon={ "fas fa-shoe-prints"
-							} color={ unaTarjeta.image } value={ unaTarjeta.price } />
+							} color={ unaTarjeta.image } value={ unaTarjeta.price } image={unaTarjeta.imageUrl} />
 							})
 						}
 					</div>
